@@ -78,12 +78,12 @@ public class PIZZAFUN {
         Stock.add(new Pizza(index, ingcount, inglist));
     }
 
-    public int compare(int no, int start, ArrayList<Pizza> plist) {
+    public int compare(int tno, int start, ArrayList<Pizza> plist) {
         int i, j, k;
         Pizza temp;
-        k = start + no;
-        for (i = 0; i < no; i++) {
-            for (j = 0; j < no; j++) {
+        k = start + tno;
+        for (i = 0; i < tno; i++) {
+            for (j = 0; j < tno; j++) {
                 if (i != j) {
                     if (plist.get(i).ingredients.containsAll(plist.get(j).ingredients)) {
                         if (k <= plist.lastIndexOf(plist)) {
